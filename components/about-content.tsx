@@ -20,14 +20,14 @@ const features = [
 ]
 
 const nearbyPlaces = [
-  { name: "Clock Tower", distance: "2.2 km", image: "/placeholder.svg" },
-  { name: "Galle Light House", distance: "2.9 km", image: "/placeholder.svg" },
-  { name: "Unawatuna Beach", distance: "6 km", image: "/placeholder.svg" },
-  { name: "Maritime Museum", distance: "9 km", image: "/placeholder.svg" },
-  { name: "Seenigama Temple", distance: "25 km", image: "/placeholder.svg" },
-  { name: "Peegoda", distance: "7 km", image: "/placeholder.svg" },
-  { name: "Lagoon", distance: "6 km", image: "/placeholder.svg" },
-  { name: "Galle Fort", distance: "2.3 km", image: "/placeholder.svg" },
+  { name: "Clock Tower", distance: "2.2 km", image: "/about/an1.png" },
+  { name: "Galle Light House", distance: "2.9 km", image: "/about/an2.png" },
+  { name: "Unawatuna Beach", distance: "6 km", image: "/about/an3.png" },
+  { name: "Maritime Museum", distance: "9 km", image: "/about/an4.png" },
+  { name: "Seenigama Temple", distance: "25 km", image:"/about/an5.png" },
+  { name: "Peegoda", distance: "7 km", image: "/about/an6.png" },
+  { name: "Lagoon", distance: "6 km", image: "/about/an7.png" },
+  { name: "Galle Fort", distance: "2.3 km", image: "/about/an8.png" },
 ]
 
 export function AboutContent() {

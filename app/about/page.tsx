@@ -11,7 +11,7 @@ export default function AboutPage() {
       <SiteHeader />
       <main>
         <HeroSection  title="Relax Vacation Awaits at OLINDA GALLE" image="/header.jpeg"/>
-        <BookingForm />
+        <BookingForm topMargin="yes" />
         <AboutContent />
         <NewsletterSection />
       </main>

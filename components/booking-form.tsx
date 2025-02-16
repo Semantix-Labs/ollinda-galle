@@ -9,7 +9,11 @@ import { format, isToday } from "date-fns"
 import { cn } from "@/lib/utils"
 import { useEffect } from "react"
 
-export function BookingForm() {
+interface BookingProp{
+  topMargin?: string
+}
+
+export function BookingForm({topMargin}:BookingProp) {
   const [checkIn, setCheckIn] = useState<Date>(new Date())
   const [checkOut, setCheckOut] = useState<Date>(new Date())
   const [adults, setAdults] = useState(2)
@@ -26,8 +30,8 @@ export function BookingForm() {
   }
 
   return (
-    <div className="bg-white/90 p-6 rounded-[20px] shadow-2xl max-w-[1140px] mx-auto -mt-[60px] relative z-10">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+    <div className={`bg-white/90 p-6 rounded-[20px] shadow-2xl max-w-[1140px] mx-auto ${topMargin ? '-mt-[150px]' : '-mt-[60px]'}  relative z-10`}>
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         <div>
         <div>  <span className="text-sm md:text-[18px] text-[#121212] font-semibold md:ml-3">Check-in</span></div>
         <Popover>
@@ -35,7 +39,7 @@ export function BookingForm() {
             
             <Button
               variant="ghost"
-              className={cn("w-full flex gap-1 text-[#515151] text-sm md:text-[15px]  justify-start text-left font-normal", !checkIn && "text-muted-foreground")}
+              className={cn("w-full truncate flex gap-1 text-[#515151] text-[8px] md:text-[15px]  justify-start text-left font-normal", !checkIn && "text-muted-foreground")}
             >
               
               {checkIn ? format(checkIn, "PPP") : <><CalendarIcon className="mr-2 h-4 w-4" /> {format(new Date(), "PPP")}</>}
@@ -55,7 +59,7 @@ export function BookingForm() {
           <PopoverTrigger asChild>
             <Button
               variant="ghost"
-              className={cn("w-full flex gap-1 text-[#515151] text-sm md:text-[15px] text-left font-normal", !checkOut && "text-muted-foreground")}
+              className={cn("w-full truncate  flex gap-1 text-[#515151] text-[8px] md:text-[15px] text-left font-normal", !checkOut && "text-muted-foreground")}
             >
               {checkOut ? format(checkOut, "PPP") : <><CalendarIcon className="mr-2 h-4 w-4" /> {format(new Date(), "PPP")}</>}
               <ChevronDown  className="ml-2 h-4 w-4"/>

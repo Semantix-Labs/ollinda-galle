@@ -1,10 +1,9 @@
 import { SiteHeader } from "@/components/site-header"
 import { HeroSection } from "@/components/hero-section"
-import { ImageGallery } from "@/components/image-gallery"
-import { RoomFeatures } from "@/components/room-features"
 import { NewsletterSection } from "@/components/newsletter-section"
 import { SiteFooter } from "@/components/site-footer"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import RoomTabs2 from "@/components/room-tabs2"
+
 
 const roomsData = {
   "deluxe-double": {
@@ -125,37 +124,11 @@ export default function RoomsPage() {
     <>
       <SiteHeader />
       <main>
-        <HeroSection />
-        <div className="container mx-auto px-4 py-8">
-          <div className="max-w-4xl mx-auto">
-            <Tabs defaultValue="deluxe-double" className="space-y-8">
-              <TabsList className="w-full justify-start h-auto flex-wrap gap-2 bg-transparent p-0">
-                {Object.entries(roomsData).map(([key, room]) => (
-                  <TabsTrigger
-                    key={key}
-                    value={key}
-                    className="data-[state=active]:bg-blue-600 data-[state=active]:text-white rounded-full px-4 py-2"
-                  >
-                    {room.name}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
-
-              {Object.entries(roomsData).map(([key, room]) => (
-                <TabsContent key={key} value={key} className="space-y-8">
-                  <div className="space-y-4">
-                    <h1 className="text-2xl font-bold">{room.name}</h1>
-                    <ImageGallery images={room.images} />
-                    <RoomFeatures features={room.features} />
-                    <div className="prose max-w-none">
-                      <p>{room.description}</p>
-                    </div>
-                  </div>
-                </TabsContent>
-              ))}
-            </Tabs>
-          </div>
-        </div>
+      <HeroSection  title="A luxurious retreat where comfort meets style" image="/header.jpeg"/>
+      <div className="container mx-auto px-4 py-8">
+      <RoomTabs2 />
+    </div>
+   
         <NewsletterSection />
       </main>
       <SiteFooter />
