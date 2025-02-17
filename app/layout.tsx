@@ -4,10 +4,13 @@ import { Toaster } from "@/components/ui/toaster"
 import { ToastContainer } from 'react-toastify'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
-}
+  title: "Olinda Galle",
+  description: "Olinda Galle offers a serene escape with luxurious amenities, perfect for relaxation. Whether you're here for business or leisure, enjoy a memorable stay in the heart of Galle.",
+  icons: {
+    icon: '/logo.png', // Use the logo as a favicon
+  },
+};
+
 
 export default function RootLayout({
   children,
