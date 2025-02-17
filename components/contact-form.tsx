@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { useToast } from "@/components/ui/use-toast"
 import countryCodes from "./countryCodes"
+import alert from "@/components/alert"
 
 
 
@@ -57,6 +58,7 @@ export default function ContactForm() {
         })
         console.log()
         if (response.ok) {
+            alert.success("Your message has been sent successfully.")
             toast({
                 title: "Success!",
                 description: "Your message has been sent successfully.",
@@ -74,7 +76,8 @@ export default function ContactForm() {
         } else {
           throw new Error('Failed to send email')
         }
-      } catch (error) {
+      } catch (error: any) {
+        alert.warn((error as Error).message || "Failed to send your message. Please try again later.")
         toast({
           title: "Error",
           description: "Failed to send your message. Please try again later.",
