@@ -13,8 +13,12 @@ export default function Page() {
     <>
       <SiteHeader />
       <main>
-        <HeroSection />
-        <FaqHero />
+      <HeroSection
+          title="Find answers to your most common questions"
+          image="/header.jpeg"
+        />
+         
+        
         <FaqSection />
        
         <NewsletterSection />

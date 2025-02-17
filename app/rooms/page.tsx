@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/hero-section"
 import { NewsletterSection } from "@/components/newsletter-section"
 import { SiteFooter } from "@/components/site-footer"
 import RoomTabs2 from "@/components/room-tabs2"
+import { BookingForm } from "@/components/booking-form"
 
 
 const roomsData = {
@@ -125,6 +126,7 @@ export default function RoomsPage() {
       <SiteHeader />
       <main>
       <HeroSection  title="A luxurious retreat where comfort meets style" image="/header.jpeg"/>
+      <BookingForm topMargin="yes" />
       <div className="container mx-auto px-4 py-8">
       <RoomTabs2 />
     </div>

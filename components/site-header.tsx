@@ -38,7 +38,7 @@ export function SiteHeader() {
                 {item.name}
               </Link>
             ))}
-            <Button variant="default" className="bg-[#0555C0] rounded-xl text-[20px]">Contact Us</Button>
+            <Link href="/contact" >  <Button variant="default" className="bg-[#0555C0] rounded-xl text-[20px]">Contact Us</Button> </Link>
           </div>
 
           {/* Mobile Navigation */}
@@ -56,7 +56,7 @@ export function SiteHeader() {
                       {item.name}
                     </Link>
                   ))}
-                  <Button className="w-full mt-4 bg-[#0555C0] rounded-xl">Contact Us</Button>
+                  <Link href="/contact" >  <Button variant="default" className="bg-[#0555C0] rounded-xl text-[20px]">Contact Us</Button> </Link>
                 </div>
               </SheetContent>
             </Sheet>

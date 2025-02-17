@@ -18,14 +18,14 @@ export function ImageGallery({ images }: ImageGalleryProps) {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null)
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
       {images.slice(0, 7).map((image, index) => (
         <Dialog key={index}>
           <DialogTrigger asChild>
             <div
               className={cn(
                 "relative cursor-pointer overflow-hidden rounded-lg",
-                index === 0 && "col-span-2 row-span-2",
+                index === 0 && "col-span-3 row-span-2",
               )}
               onClick={() => setSelectedImage(image)}
             >
@@ -33,7 +33,7 @@ export function ImageGallery({ images }: ImageGalleryProps) {
                 src={image.src || "/placeholder.svg"}
                 alt={image.alt}
                 width={index === 0 ? 600 : 300}
-                height={index === 0 ? 600 : 300}
+                height={index === 0 ? 400 : 300}
                 className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
               />
               {index === 6 && (
