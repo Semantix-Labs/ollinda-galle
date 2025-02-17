@@ -33,7 +33,7 @@ export function SiteHeader() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-[20px] ${pathname === item.href ? "text-[#0FAEEA] border-b-2 border-[#0FAEEA]" : "text-white hover:text-blue-600"}`}
+                className={`text-[20px] ${pathname === item.href ? "text-[#0FAEEA] border-b-2 border-[#0FAEEA]" : "text-white hover:text-[#0FAEEA]"}`}
               >
                 {item.name}
               </Link>
