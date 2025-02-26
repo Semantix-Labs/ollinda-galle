@@ -71,9 +71,10 @@ export function SiteFooter() {
           <div>
             <h4 className="text-white font-semibold mb-4">Contact Us</h4>
             <div className="space-y-2">
-              <p>+94 76 XXX XXXX</p>
-              <p>+94 76 XXX XXXX</p>
-              <p>info@olindagalle.com</p>
+              <p> 0777159999</p>
+              <p> 0777118197</p>
+              <p> 0912240800</p>
+              <Link href="mailto:info@olindagalle.com" className="hover:text-white">info@olindagalle.com</Link>
             </div>
           </div>
         </div>
