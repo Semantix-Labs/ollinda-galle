@@ -205,10 +205,10 @@ export default function ContactForm() {
   
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <span className="text-[#515151]">+94 77 777 7777</span>
+                  <span className="text-[#515151]">0777159999 / 0777118197/ 0912240800</span>
                 </div>
                 <div className="flex items-start gap-3 text-[#515151]">
-                  <span>info@lindagalle@gmail.com</span>
+                  <span>info@olindagalle.com</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <address className="not-italic text-[#515151]">
