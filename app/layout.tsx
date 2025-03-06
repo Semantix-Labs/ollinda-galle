@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Toaster } from "@/components/ui/toaster"
 import { ToastContainer } from 'react-toastify'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: "Olinda Galle",
@@ -10,7 +11,6 @@ export const metadata: Metadata = {
     icon: '/logo.png', // Use the logo as a favicon
   },
 };
-
 
 export default function RootLayout({
   children,
@@ -23,10 +23,23 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body>
-      <Toaster />
-      <ToastContainer />
+        <Toaster />
+        <ToastContainer />
         {children}
-        </body>
+        
+        {/* SwiftBook Widget Container - This is where the widget will be rendered */}
+        <div 
+          id="quickbook-widget-622NTaSVLR4f5uDW0tMfRHyp5kMosRvfrjjaQ1NjI=-54562" 
+          className="Configure-quickBook-Widget"
+        ></div>
+        
+        {/* SwiftBook Script - Using Next.js Script component for proper loading */}
+        <Script
+          id="propInfo"
+          src="https://settings.swiftbook.io/displaywidget/preview/booking-service.min.js?propertyId=622NTaSVLR4f5uDW0tMfRHyp5kMosRvfrjjaQ1NjI=&scriptId=54562"
+          strategy="lazyOnload"
+        />
+      </body>
     </html>
   )
 }
