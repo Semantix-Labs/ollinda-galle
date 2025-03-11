@@ -27,18 +27,7 @@ export default function RootLayout({
         <ToastContainer />
         {children}
         
-        {/* SwiftBook Widget Container - This is where the widget will be rendered */}
-        <div 
-          id="quickbook-widget-622NTaSVLR4f5uDW0tMfRHyp5kMosRvfrjjaQ1NjI=-54562" 
-          className="Configure-quickBook-Widget"
-        ></div>
-        
-        {/* SwiftBook Script - Using Next.js Script component for proper loading */}
-        <Script
-          id="propInfo"
-          src="https://settings.swiftbook.io/displaywidget/preview/booking-service.min.js?propertyId=622NTaSVLR4f5uDW0tMfRHyp5kMosRvfrjjaQ1NjI=&scriptId=54562"
-          strategy="lazyOnload"
-        />
+      
       </body>
     </html>
   )

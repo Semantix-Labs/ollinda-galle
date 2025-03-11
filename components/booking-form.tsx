@@ -35,48 +35,27 @@ export function BookingForm({ topMargin }: BookingProp) {
     const checkOutStr = format(checkOut, "yyyy-MM-dd");
     
     try {
-      // Attempt to use SwiftBook's API if available
-      if (window.SwiftBook && typeof window.SwiftBook.openBooking === 'function') {
-        window.SwiftBook.openBooking({
-          checkIn: checkInStr,
-          checkOut: checkOutStr,
-          adults: adults,
-          children: children
-        });
-      } else {
-        // Find the SwiftBook widget
-        const widgetContainer = document.getElementById('quickbook-widget-622NTaSVLR4f5uDW0tMfRHyp5kMosRvfrjjaQ1NjI=-54562');
-        
-        if (widgetContainer) {
-          // Set data attributes that SwiftBook might read
-          widgetContainer.setAttribute('data-checkin', checkInStr);
-          widgetContainer.setAttribute('data-checkout', checkOutStr);
-          widgetContainer.setAttribute('data-adults', adults.toString());
-          widgetContainer.setAttribute('data-children', children.toString());
-          
-          // Dispatch a custom event that SwiftBook might listen for
-          const event = new CustomEvent('swiftbook:search', { 
-            detail: { checkIn: checkInStr, checkOut: checkOutStr, adults, children }
-          });
-          widgetContainer.dispatchEvent(event);
-          
-          // Scroll to the widget to ensure it's visible
-          widgetContainer.scrollIntoView({ behavior: 'smooth' });
-          
-          // Try to trigger the SwiftBook widget's own search button if it exists
-          const widgetSearchButton = widgetContainer.querySelector('button[type="submit"]');
-          if (widgetSearchButton instanceof HTMLElement) {
-            widgetSearchButton.click();
-          }
-        } else {
-          console.warn("SwiftBook widget container not found");
-        }
-      }
+      // Create the URL for the booking page
+      const baseUrl = "https://settings.swiftbook.io/property/622NTaSVLR4f5uDW0tMfRHyp5kMosRvfrjjaQ1NjI=";
+      const searchParams = new URLSearchParams({
+        checkIn: checkInStr,
+        checkOut: checkOutStr,
+        adults: adults.toString(),
+        children: children.toString()
+      });
+      
+      // Open the URL in a new window
+      window.open(`${baseUrl}?${searchParams.toString()}`, '_blank');
       
       // Log for debugging
-      console.log("Search clicked", { checkIn: checkInStr, checkOut: checkOutStr, adults, children });
+      console.log("Search clicked - opening in new window", { 
+        checkIn: checkInStr, 
+        checkOut: checkOutStr, 
+        adults, 
+        children 
+      });
     } catch (error) {
-      console.error("Error interfacing with SwiftBook widget:", error);
+      console.error("Error opening booking window:", error);
     }
   }
 
