@@ -19,7 +19,7 @@ export function SiteHeader() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/35 backdrop-blur-sm">
-      <nav className="container mx-auto px-4 h-[138px] pt-[50px]">
+      <nav className="container mx-auto px-4 h-[90px] pt-[10px] md:h-[138px] md:pt-[50px]">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="font-semibold text-xl">
            <div className="relative  w-[64px] h-[74px]">

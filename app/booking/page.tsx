@@ -13,7 +13,7 @@ export default function BookingPage() {
       <HeroSection  title="A luxurious retreat where comfort meets style" image="/header.jpeg"/>
 
         {/* <BookingForm2 /> */}
-        <div className="bg-white mt-[100px] h-[300px]">
+        <div className="bg-white mb-28 p-8 md:mb-0 md:mt-[100px] h-[300px]">
          {/* SwiftBook Widget Container - This is where the widget will be rendered */}
          <div 
           id="quickbook-widget-622NTaSVLR4f5uDW0tMfRHyp5kMosRvfrjjaQ1NjI=-54562" 

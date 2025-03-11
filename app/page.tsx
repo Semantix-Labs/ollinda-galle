@@ -15,7 +15,7 @@ export default function Home() {
       <main>
         <HeroSection  image="/header.jpeg" title="Relax Vacation Awaits at OLINDA GALLE" normalText="Olinda Galle offers a serene escape with luxurious amenities, perfect for relaxation. Whether you're here for business or leisure, enjoy a memorable stay in the heart of Galle." />
         {/* <BookingForm /> */}
-        <div className="  relative z-10 flex items-center  h-[130px] -mt-[60px] bg-white/90 p-6 rounded-[20px] shadow-2xl max-w-[1140px] mx-auto">
+        <div className=" mb-16 md:mb-5 pt-6  relative z-10 flex items-center py-6  md:h-[130px] md:-mt-[60px] bg-white/90 md:p-6 rounded-[20px] shadow-2xl max-w-[1140px]  md:mx-auto">
          {/* SwiftBook Widget Container - This is where the widget will be rendered */}
          <div 
           id="quickbook-widget-622NTaSVLR4f5uDW0tMfRHyp5kMosRvfrjjaQ1NjI=-54562" 
