@@ -3,7 +3,7 @@ import { RoomCard } from "./room-card"
 const rooms = [
   {
     title: "Deluxe Double Room",
-    image: "/home/r1.png",
+    image: "/home/r1.jpg",
     features: ["1 King Bed", "25.27 m", "A/C", "Balcony"],
   },
   {
@@ -13,7 +13,7 @@ const rooms = [
   },
   {
     title: "Standard Double Room",
-    image: "/home/r3.png",
+    image: "/room/r3.jpg",
     features: ["1 Full Bed", "King Bed", "A/C", "Balcony"],
   },
 ]

@@ -8,13 +8,13 @@ import Script from "next/script"
 
 const galleryImages = [
   {
-    src: "/room/s1.png",
+    src: "/about/main.jpg",
     alt: "Bedroom with canopy bed",
   },
-  { src: "/room/d4.png", alt: "Desk area" },
-  { src: "/room/d3.png", alt: "Bathroom" },
-  { src: "/room/d2.png", alt: "Room feature 1" },
-  { src: "/room/d5.png", alt: "Room feature 2" },
+  { src: "/main2.jpg", alt: "Desk area" },
+  { src: "/main3.jpg", alt: "Bathroom" },
+  { src: "/main4.jpg", alt: "Room feature 1" },
+  { src: "main5.jpg", alt: "Room feature 2" },
   { src: "/room/d6.png", alt: "Room feature 3" },
   { src: "/room/d7.png", alt: "Room feature 4" },
   // Add more images as needed
@@ -38,7 +38,7 @@ export default function GalleryPage() {
       <main>
         <HeroSection
           title="Discover Olinda Galle through stunning visuals"
-          image="/header.jpeg"
+          image="/main4.jpg"
         />
          
         {/* <BookingForm /> */}

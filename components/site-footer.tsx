@@ -71,16 +71,16 @@ export function SiteFooter() {
           <div>
             <h4 className="text-white font-semibold mb-4">Contact Us</h4>
             <div className="space-y-2">
-              <p> 0777159999</p>
-              <p> 0777118197</p>
-              <p> 0912240800</p>
+              <p> +94 777159999 /  +94 77118197<br></br></p>
+              <p className="padding:2px"></p>
+           
               <Link href="mailto:info@olindagalle.com" className="hover:text-white">info@olindagalle.com</Link>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
-          Copyright © 2025 semantic labs. All right reserved.
+          Copyright © 2025 Semantix labs. All right reserved.
         </div>
       </div>
     </footer>
