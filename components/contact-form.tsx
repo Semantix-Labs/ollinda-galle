@@ -90,7 +90,7 @@ export default function ContactForm() {
     }
   
     return (
-      <div className="bg-[#CBDAEE]">
+      <div className="bg-[#EAF1F4]">
          
         <div className="container mx-auto px-4 py-16">
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -205,7 +205,7 @@ export default function ContactForm() {
   
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <span className="text-[#515151]">0777159999 / 0777118197/ 0912240800</span>
+                  <span className="text-[#515151]">+94 777159999 / +94 777118197/ +94 912240800</span>
                 </div>
                 <div className="flex items-start gap-3 text-[#515151]">
                   <span>info@olindagalle.com</span>
@@ -213,7 +213,7 @@ export default function ContactForm() {
                 <div className="flex items-start gap-3">
                   <address className="not-italic text-[#515151]">
                     No 12A Bope Cross Road,
-                    <br />
+                    <br />Mahamodara <br/>
                     8000 Galle, Sri Lanka
                   </address>
                 </div>

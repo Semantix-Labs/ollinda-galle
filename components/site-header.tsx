@@ -10,8 +10,8 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Rooms", href: "/rooms" },
-  { name: "Booking", href: "/booking" },
   { name: "Gallery", href: "/gallery" },
+    { name: "Contact Us", href: "/contact" },
 ]
 
 export function SiteHeader() {
@@ -38,7 +38,7 @@ export function SiteHeader() {
                 {item.name}
               </Link>
             ))}
-            <Link href="/contact" >  <Button variant="default" className="bg-[#0555C0] rounded-xl text-[20px]">Contact Us</Button> </Link>
+            <Link href="https://www.swiftbook.io/inst/#home?propertyId=323NTQJl9ctqaLrY50X74Y1NjI=&JDRN=Y" >  <Button variant="default" className="bg-[#0555C0] rounded-xl text-[20px]">Book Now</Button> </Link>
           </div>
 
           {/* Mobile Navigation */}

@@ -11,7 +11,7 @@ export default function Page() {
       <main>
       <HeroSection
           title="Reach out to us, we’re happy to assist"
-          image="/header.jpeg"
+          image="/main7.jpg"
         />
          
         <ContactForm />

@@ -10,7 +10,7 @@ export default function BookingPage() {
     <>
       <SiteHeader />
       <main>
-      <HeroSection  title="A luxurious retreat where comfort meets style" image="/main3.jpg"/>
+      <HeroSection  title="A luxurious retreat where comfort meets style" image="/main6.jpg"/>
 
         {/* <BookingForm2 /> */}
         <div className="bg-white mb-28 p-8 md:mb-0 md:mt-[100px] h-[300px]">
