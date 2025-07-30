@@ -16,11 +16,7 @@ export function SiteFooter() {
              className="object-cover "/>
             </div>
             <p className="text-sm mt-3">
-              No.123 Beach Road,
-              <br />
-              5000 Galle
-              <br />
-              Sri Lanka
+              No:12A, <br/> Bope Cross Road,<br/> Mahamodara, Galle.
             </p>
             <div className="flex gap-4 mt-4">
               <Link href="#" className="hover:text-white">
