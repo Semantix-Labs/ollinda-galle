@@ -33,12 +33,12 @@ export function SiteHeader() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-[20px] ${pathname === item.href ? "text-[#0FAEEA] border-b-2 border-[#0FAEEA]" : "text-white hover:text-[#0FAEEA]"}`}
+                className={`text-[20px] ${pathname === item.href ? "text-[#354a21] border-b-2 border-[#354a21]" : "text-white hover:text-[#354a21]"}`}
               >
                 {item.name}
               </Link>
             ))}
-            <Link href="https://www.swiftbook.io/inst/#home?propertyId=323NTQJl9ctqaLrY50X74Y1NjI=&JDRN=Y" >  <Button variant="default" className="bg-[#0555C0] rounded-xl text-[20px]">Book Now</Button> </Link>
+            <Link href="https://www.swiftbook.io/inst/#home?propertyId=323NTQJl9ctqaLrY50X74Y1NjI=&JDRN=Y" >  <Button variant="default" className="bg-[#354a21] rounded-xl text-[20px]">Book Now</Button> </Link>
           </div>
 
           {/* Mobile Navigation */}

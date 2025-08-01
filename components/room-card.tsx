@@ -28,7 +28,7 @@ export function RoomCard({ title, image, features }: RoomCardProps) {
           ))}
         </div>
         <div className="flex justify-center ">
-        <Button className="w-full bg-[#0555C0] rounded-[12px] md:w-[280px] items-center">See Availability</Button>
+        <Button className="w-full bg-[#354a21] rounded-[12px] md:w-[280px] items-center">See Availability</Button>
         </div>
       </div>
     </div>

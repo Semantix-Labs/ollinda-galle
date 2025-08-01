@@ -182,7 +182,7 @@ export default function ContactForm() {
                 <Button 
                   type="submit" 
                   size="lg"
-                  className="flex w-[120px] items-center bg-[#0555C0] rounded-[20px] text-[20px]"
+                  className="flex w-[120px] items-center bg-[#354a21] rounded-[20px] text-[20px]"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Submit"}

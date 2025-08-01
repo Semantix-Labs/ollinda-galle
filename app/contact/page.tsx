@@ -15,7 +15,7 @@ export default function Page() {
         />
          
         <ContactForm />
-        <NewsletterSection />
+      
       </main>
       <SiteFooter />
     </>

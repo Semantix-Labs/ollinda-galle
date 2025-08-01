@@ -19,10 +19,11 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-col items-center p-4 md:p-6 border-[2px] border-[#0555C0] rounded-tl-[50px] rounded-br-[50px] hover:shadow-lg transition-shadow"
+     
+              className="flex flex-col items-center p-4 md:p-6 border-[2px] border-[#354a21] rounded-tl-[50px] rounded-br-[50px] hover:shadow-lg transition-shadow"
             >
               <img src={feature.icon} alt={feature.title} className="w-[76px] h-[76px] brightness-80" />
-              <h3 className="text-[#0555C0] text-[20px] mt-3 font-semibold text-center">{feature.title}</h3>
+              <h3 className="text-[#354a21] text-[20px] mt-3 font-semibold text-center">{feature.title}</h3>
             </div>
           ))}
         </div>

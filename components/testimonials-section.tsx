@@ -16,7 +16,7 @@ export function TestimonialsSection() {
           </Button>
 
           <div className=" rounded-lg p-6 md:p-8 text-center  md:mx-auto mx-auto md:max-w-[906px]">
-            <p className="text-lg text-[#0555C0] text-[36px] leading-[48px] mb-4">
+            <p className="text-lg text-[#354a21] text-[36px] leading-[48px] mb-4">
               "Without doubt, the best hotel we have stayed in. This is a must if you come to Galle"
             </p>
             <div className="mb-2">Jenny</div>

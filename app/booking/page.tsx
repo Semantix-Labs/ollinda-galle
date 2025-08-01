@@ -27,7 +27,7 @@ export default function BookingPage() {
           strategy="lazyOnload"
         />
         </div>
-        <NewsletterSection />
+       
       </main>
       <SiteFooter />
     </>

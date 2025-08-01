@@ -38,28 +38,30 @@ export default function GalleryPage() {
       <main>
         <HeroSection
           title="Discover Olinda Galle through stunning visuals"
-          image="/main4.jpg"
+          image="/img66.jpg"
         />
          
         {/* <BookingForm /> */}
-        <div className=" mb-16 md:mb-5 pt-6  relative z-10 flex items-center py-6  md:h-[130px] md:-mt-[60px] bg-white/90 md:p-6 rounded-[20px] shadow-2xl max-w-[1140px]  md:mx-auto">
+         <div className=" mb-16 md:mb-5 pt-6  relative z-10 flex items-center py-6  md:h-[130px] md:-mt-[60px] bg-white/90 md:p-6 rounded-[20px] shadow-2xl max-w-[1140px]  md:mx-auto">
          {/* SwiftBook Widget Container - This is where the widget will be rendered */}
-         <div 
-          id="quickbook-widget-622NTaSVLR4f5uDW0tMfRHyp5kMosRvfrjjaQ1NjI=-54562" 
-          className="Configure-quickBook-Widget"
-        ></div>
+         <div className="w-full flex justify-center">
+  <div 
+    id="quickbook-widget-622NTaSVLR4f5uDW0tMfRHyp5kMosRvfrjjaQ1NjI=-54562" 
+    className="Configure-quickBook-Widget"
+  ></div>
+</div>
         
         {/* SwiftBook Script - Using Next.js Script component for proper loading */}
         <Script
           id="propInfo"
           src="https://settings.swiftbook.io/displaywidget/preview/booking-service.min.js?propertyId=622NTaSVLR4f5uDW0tMfRHyp5kMosRvfrjjaQ1NjI=&scriptId=54562"
-          strategy="lazyOnload"
+          strategy="beforeInteractive"
         />
         </div>
         <section className="container mx-auto px-4 py-12">
           <ImageGallery images={galleryImages} />
         </section>
-        <NewsletterSection />
+     
       </main>
       <SiteFooter />
     </>
